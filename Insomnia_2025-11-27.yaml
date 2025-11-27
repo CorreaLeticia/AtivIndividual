@@ -1,0 +1,517 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755774212400
+  modified: 1755774212400
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_8a78d7e982b64ac09da5d471a005f2ee
+      created: 1755785977417
+      modified: 1756991862198
+      sortKey: -1755785990596
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_83fdf58ee155403d9a1f65de2c5a3998
+          created: 1755785990496
+          modified: 1756991891392
+          sortKey: -1756991865597
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_f87da11a938a46f2bcb76fb70941f0b2
+          created: 1756389502400
+          modified: 1756991865539
+          sortKey: -1756991865497
+          description: ""
+  - name: Escola
+    meta:
+      id: fld_985e4d5b03cc4ba49e67b75433ad120d
+      created: 1756991900487
+      modified: 1757599800736
+      sortKey: -1756991900487
+      description: ""
+    children:
+      - name: Professores
+        meta:
+          id: fld_7e432bbe6460402d9855436f9fc4ab05
+          created: 1756991956819
+          modified: 1756991960744
+          sortKey: -1756991960681
+          description: ""
+      - name: Disciplinas
+        meta:
+          id: fld_60aacf6719384a6f8259ca13d540a9e4
+          created: 1757005275416
+          modified: 1759411348037
+          sortKey: -1756991960781
+          description: ""
+  - name: Loja
+    meta:
+      id: fld_8c1f04a1034344dca2defdcc88fda63b
+      created: 1757599644566
+      modified: 1758196553951
+      sortKey: -1757599765836
+      description: ""
+  - name: Locadora
+    meta:
+      id: fld_6918fb0091634387b762f4926f4906e6
+      created: 1758807654223
+      modified: 1758807654223
+      sortKey: -1758807654223
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_9b7f8c10262148c3a4ef815e5ea0c9a0
+          created: 1759411042808
+          modified: 1759411042808
+          sortKey: -1759411042808
+          description: ""
+      - name: Filmes
+        meta:
+          id: fld_08355147901040b49ddb03afc2b2378b
+          created: 1759411199161
+          modified: 1759411199161
+          sortKey: -1759411199161
+          description: ""
+      - name: Locações
+        meta:
+          id: fld_fcfe2256c31c43bfbbcb9536553b883d
+          created: 1759411281296
+          modified: 1759411281296
+          sortKey: -1759411281296
+          description: ""
+  - name: Estudio
+    meta:
+      id: fld_229d203bfec9471fbbb74ecdfc207fcc
+      created: 1763991518933
+      modified: 1763993885613
+      sortKey: -1763993778510
+      description: ""
+    children:
+      - name: Cliente
+        meta:
+          id: fld_528537195b004bff90da2b871c48914e
+          created: 1763991582287
+          modified: 1763993893372
+          sortKey: -1763993736993
+          description: ""
+        children:
+          - url: http://localhost:3000/login
+            name: Login
+            meta:
+              id: req_eccef039f7734da8afd614b399a329f6
+              created: 1763991590612
+              modified: 1763993372975
+              isPrivate: false
+              description: ""
+              sortKey: -1763991590612
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                    "email": "admin@gmail.com",
+                    "senha": "1234"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/cliente
+            name: Adicionar Cliente
+            meta:
+              id: req_b860d5aeee874893840a7d693eb260f3
+              created: 1763991595137
+              modified: 1763993390240
+              isPrivate: false
+              description: ""
+              sortKey: -1763991595137
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "nome": "Letícia Souza",
+                  "telefone": "11999999999",
+                  "email": "leticia@gmail.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5MzM3NCwiZXhwIjoxNzYzOTk2OTc0fQ.3SUAoX90PmF6YNgN-B9PakC_-zt5kKVy2qwN45eI-pI
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/cliente
+            name: Listar Clientes
+            meta:
+              id: req_7834c3bd1dd44891846ca150c435595d
+              created: 1763993476697
+              modified: 1763993545231
+              isPrivate: false
+              description: ""
+              sortKey: -1763993476697
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5MzM3NCwiZXhwIjoxNzYzOTk2OTc0fQ.3SUAoX90PmF6YNgN-B9PakC_-zt5kKVy2qwN45eI-pI
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/clientes/1
+            name: New Request
+            meta:
+              id: req_4458aa70991a4812becbd3fdd35f9080
+              created: 1764014584386
+              modified: 1764014611664
+              isPrivate: false
+              description: ""
+              sortKey: -1764014584386
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "nome": "Letícia Atualizada",
+                  "telefone": "11888888888",
+                  "email": "novo@gmail.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Tatuador
+        meta:
+          id: fld_f9ced2b730e542d7a74fc84d2281fe0b
+          created: 1763993736893
+          modified: 1763993736893
+          sortKey: -1763993736893
+          description: ""
+        children:
+          - url: http://localhost:3000/tatuador
+            name: Adicionar Tatuador
+            meta:
+              id: req_43e7c028d0e74a108ec616227973f745
+              created: 1763993904467
+              modified: 1763994022573
+              isPrivate: false
+              description: ""
+              sortKey: -1763993904467
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                    "nome": "Ana Lima",
+                    "especialidade": "Minimalista",
+                    "telefone": "11966666666"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5MzYyMywiZXhwIjoxNzYzOTk3MjIzfQ.6ZPfW5fm-k9o3phJdm06C5A0yPjmN1ovsE_zaq82K74
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/tatuador
+            name: Listar Tatuadores
+            meta:
+              id: req_a699277eac404f67969119217177480a
+              created: 1763994178685
+              modified: 1763994253833
+              isPrivate: false
+              description: ""
+              sortKey: -1763994178685
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Autharization
+                value: Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5MzYyMywiZXhwIjoxNzYzOTk3MjIzfQ.6ZPfW5fm-k9o3phJdm06C5A0yPjmN1ovsE_zaq82K74
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Agendamento
+        meta:
+          id: fld_a16941fa6a5b4063b0fb39509f09e2d7
+          created: 1763994324521
+          modified: 1763994324521
+          sortKey: -1763994324521
+          description: ""
+        children:
+          - url: http://localhost:3000/agendar
+            name: Criar Agendamento
+            meta:
+              id: req_b5972ec0d4cd4a418c1f99056473c8ce
+              created: 1763994329858
+              modified: 1764002913345
+              isPrivate: false
+              description: ""
+              sortKey: -1763994329858
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                    "clienteId": 1,
+                    "tatuadorId": 2,
+                    "data": "2025-12-05",
+                    "horario": "10:30:00",
+                    "desenho": "Borboleta colorida",
+                    "valor": 400.00,
+                    "status": "Confirmado"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5OTc3OCwiZXhwIjoxNzY0MDAzMzc4fQ.bPaQPGIV8vdgHgcX197kGaxYMXlltx4Lc-lAuoScYak
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/agendamentos
+            name: Listar Agendamento
+            meta:
+              id: req_260b14c766894f5dac719067c782ea9e
+              created: 1763994502938
+              modified: 1764003098030
+              isPrivate: false
+              description: ""
+              sortKey: -1763994502938
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+              - name: Authorization
+                value: Bearer
+                  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTc2Mzk5OTM5NSwiZXhwIjoxNzY0MDAyOTk1fQ.OCrSHiUeR0MaEppL8VCJXDSOg1hgRpf6-5XswZIpOZ0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/agendamentos/tatuador/1
+            name: Agenda por Tatuador
+            meta:
+              id: req_df6290a90d7342afa007d435339e23e7
+              created: 1764003246857
+              modified: 1764004597528
+              isPrivate: false
+              description: ""
+              sortKey: -1764003246857
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/agendamentos/cliente/2
+            name: Agendamento do Cliente
+            meta:
+              id: req_b7f4109fbfd64875bccd92de4392db82
+              created: 1764003768076
+              modified: 1764004615317
+              isPrivate: false
+              description: ""
+              sortKey: -1764003768076
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/agendamentos/faturamento/1
+            name: Faturamento do Tatuador
+            meta:
+              id: req_7035573d73944ebab48c99a842ac6d3a
+              created: 1764004628980
+              modified: 1764004641006
+              isPrivate: false
+              description: ""
+              sortKey: -1764004628980
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/agendamentos/proximos
+            name: Próximo Agendamento
+            meta:
+              id: req_4b200b69320d4da7973681298ea09ea9
+              created: 1764004661909
+              modified: 1764004677817
+              isPrivate: false
+              description: ""
+              sortKey: -1764004629080
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: Cantina
+    meta:
+      id: fld_52ac7b866e88417fb8df182977116d2c
+      created: 1764250023426
+      modified: 1764250023426
+      sortKey: -1764250023426
+      description: ""
+    children:
+      - name: Alunos
+        meta:
+          id: fld_58e41b68c6ce430ea6da833570b90ddf
+          created: 1764253086507
+          modified: 1764253166125
+          sortKey: -1764250028355
+          description: ""
+      - name: Produtos
+        meta:
+          id: fld_db3a5477648a442a8d3026d9977c4418
+          created: 1764253198074
+          modified: 1764253219212
+          sortKey: -1764250028455
+          description: ""
+      - name: Pedidos
+        meta:
+          id: fld_d4714b41a58e4f7892e951b2ab87f834
+          created: 1764253497512
+          modified: 1764253499540
+          sortKey: -1764250028555
+          description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785082773
+    modified: 1755785082773
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785082605
+    modified: 1755785082605
+    isPrivate: false
