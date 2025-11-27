@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Estúdio de Tatuagem - TattoLab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div id="logo">
+    
+    <img src="Logo para Estúdio de Tatuagem Ilustrado Vermelho e Preto.png" alt=" Logo" id="logo-img">
+    <h1>Estúdio de Tatuagem - TattoLab</h1>
+  </div>
+
+  <div class="botoes-principais">
+    <button onclick="showTab('agendamentos')">Agendamentos</button>
+    <button onclick="showTab('faturamento')">Faturamentos</button>
+    <button onclick="showTab('relatorios')">Relatórios</button>
+  </div>
+</header>
+
+  </header>
+
+  <main id="main-content">
+    <section id="agendamentos" class="content-section">
+      <h2>Agendar Sessão</h2>
+      <form id="form-agendamento">
+        <input type="text" id="cliente" placeholder="Nome do Cliente" required>
+        <input type="text" id="tatuador" placeholder="Nome do Tatuador" required>
+        <input type="datetime-local" id="data-hora" required>
+        <input type="number" id="valor" placeholder="Valor da Sessão" required>
+        <button type="submit">Agendar</button>
+      </form>
+      <div id="lista-agendamentos"></div>
+    </section>
+
+    <section id="faturamento" class="content-section" style="display:none;">
+      <h2>Faturamento do Tatuador</h2>
+      <input type="text" id="tatuador-faturamento" placeholder="Nome do Tatuador" required>
+      <button id="calcular-faturamento">Calcular Faturamento</button>
+      <div id="faturamento-resultado"></div>
+    </section>
+
+    <section id="relatorios" class="content-section" style="display:none;">
+      <h2>Relatórios</h2>
+      <button id="agenda-tatuador-btn">Ver Agenda de Tatuador</button>
+      <button id="agendamentos-cliente-btn">Listar Agendamentos de Cliente</button>
+      <button id="proximos-agendamentos-btn">Mostrar Próximos Agendamentos</button>
+      <div id="relatorio-conteudo"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Estúdio de Tatuagem</p>
+  </footer>
+</body>
+</html>
